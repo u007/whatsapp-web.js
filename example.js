@@ -3,10 +3,7 @@ const { Client, Location, List, Buttons, LocalAuth } = require('./index');
 const client = new Client({
     authStrategy: new LocalAuth(),
     // proxyAuthentication: { username: 'username', password: 'password' },
-    puppeteer: {
-        // args: ['--proxy-server=proxy-server-that-requires-authentication.example.com'],
-        headless: "new"
-    }
+
 });
 
 client.initialize();
