@@ -178,8 +178,6 @@ class Client extends EventEmitter {
         const INTRO_IMG_SELECTOR = '[data-icon="chat"],[data-icon="intro-md-beta-logo-dark"],[data-icon="intro-md-beta-logo-light"]';
         const INTRO_QRCODE_SELECTOR = 'div[data-ref] canvas';
 
-        console.log('oookkk');
-
         // Checks which selector appears first
         const needAuthentication = await Promise.race([
             new Promise(resolve => {
