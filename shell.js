@@ -11,7 +11,7 @@ const repl = require('repl');
 const { Client, LocalAuth } = require('./index');
 
 const client = new Client({
-    puppeteer: { headless: false }, 
+    puppeteer: { headless: 'new' }, 
     authStrategy: new LocalAuth()
 });
 
